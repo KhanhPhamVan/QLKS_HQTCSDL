@@ -196,6 +196,10 @@ namespace QLKS
             LoadingList();
             cboCountry.DataSource = Helpers.Countries;
             cboGender.DataSource=new List<string>{"Nam","Nữ" };
+            txt_SDT.Enabled = true;
+            txt_CCCD.Enabled = false;
+            dgr_PhieuDatPhong.DataSource = db.GetTable("SELECT * FROM DS_PHIEU_DAT_PHONG");
+
         }
 
         private void lsvRoomEmpty_SelectedIndexChanged(object sender, EventArgs e)
@@ -455,6 +459,55 @@ namespace QLKS
             Helpers.ClearControl(groupBox1);
             Helpers.ClearControl(groupBox3);
             Helpers.ClearControl(groupBox4);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string sdt = txt_SDT.Text;
+            string cccd = txt_CCCD.Text;
+            if (cb_cccd.Checked == false)
+            {
+                if (string.IsNullOrEmpty(sdt))
+                {
+                    MessageBox.Show("Vui lòng nhập số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(cccd))
+                {
+                    MessageBox.Show("Vui lòng nhập số CCCD", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+            }
+
+            string sqls = $"EXEC SP_DS_PHIEU_DAT_PHONG '{sdt}', '{cccd}'";
+            DataTable dt = db.GetTable(sqls);
+            if (dt.Rows.Count > 0)
+            {
+                dgr_PhieuDatPhong.DataSource = db.GetTable(sqls);
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy thông tin khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void cb_cccd_CheckedChanged(object sender, EventArgs e)
+        {
+            if(cb_cccd.Checked)
+            {
+                txt_SDT.Enabled = false;
+                txt_CCCD.Enabled = true;
+                txt_CCCD.Focus();
+            }
+            else
+            {
+                txt_SDT.Enabled = true;
+                txt_CCCD.Enabled = false;
+                txt_SDT.Focus();
+            }
         }
     }
 }

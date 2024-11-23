@@ -75,7 +75,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(26, 260);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(240, 30);
+            this.label4.Size = new System.Drawing.Size(309, 38);
             this.label4.TabIndex = 4;
             this.label4.Text = "QUẢN LÝ KHÁCH SẠN";
             // 
@@ -102,7 +102,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(223, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 41);
+            this.label3.Size = new System.Drawing.Size(203, 50);
             this.label3.TabIndex = 14;
             this.label3.Text = "Đăng nhập";
             // 
@@ -126,7 +126,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(153, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 21);
+            this.label2.Size = new System.Drawing.Size(99, 28);
             this.label2.TabIndex = 11;
             this.label2.Text = "Username";
             // 
@@ -136,7 +136,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(153, 180);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 21);
+            this.label1.Size = new System.Drawing.Size(93, 28);
             this.label1.TabIndex = 12;
             this.label1.Text = "Password";
             // 
@@ -154,7 +154,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(153, 208);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(358, 29);
+            this.txtPassword.Size = new System.Drawing.Size(358, 34);
             this.txtPassword.TabIndex = 8;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -172,11 +172,12 @@
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(153, 119);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(358, 29);
+            this.txtUsername.Size = new System.Drawing.Size(358, 34);
             this.txtUsername.TabIndex = 7;
             // 
             // FormLogin
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(954, 343);
             this.Controls.Add(this.panel2);

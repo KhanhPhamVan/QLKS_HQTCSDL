@@ -33,14 +33,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtMaxPeople = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtRoomTypeName = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnBooking = new System.Windows.Forms.Button();
@@ -70,6 +62,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.cboRoomNumber = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtMaxPeople = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtRoomTypeName = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dtpStart = new System.Windows.Forms.DateTimePicker();
@@ -88,29 +88,30 @@
             this.lsvRoomEmpty = new System.Windows.Forms.ListView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dgr_PhieuDatPhong = new System.Windows.Forms.DataGridView();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.label19 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_SDT = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_CCCD = new System.Windows.Forms.TextBox();
+            this.cb_cccd = new System.Windows.Forms.CheckBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -119,6 +120,8 @@
             this.tableLayoutPanel6.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -127,10 +130,10 @@
             this.groupBox5.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.groupBox11.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgr_PhieuDatPhong)).BeginInit();
             this.groupBox10.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -184,108 +187,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1302, 659);
             this.tableLayoutPanel1.TabIndex = 23;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.tableLayoutPanel3);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Green;
-            this.groupBox2.Location = new System.Drawing.Point(458, 53);
-            this.groupBox2.Name = "groupBox2";
-            this.tableLayoutPanel1.SetRowSpan(this.groupBox2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(319, 352);
-            this.groupBox2.TabIndex = 15;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Thông tin loại phòng";
-            // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.txtMaxPeople, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 4);
-            this.tableLayoutPanel3.Controls.Add(this.txtRoomTypeName, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label6, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.txtPrice, 0, 3);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 27);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 7;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(313, 322);
-            this.tableLayoutPanel3.TabIndex = 4;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 2);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(307, 25);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Tên loại phòng";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtMaxPeople
-            // 
-            this.txtMaxPeople.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaxPeople.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMaxPeople.Enabled = false;
-            this.txtMaxPeople.Location = new System.Drawing.Point(3, 174);
-            this.txtMaxPeople.Name = "txtMaxPeople";
-            this.txtMaxPeople.Size = new System.Drawing.Size(307, 31);
-            this.txtMaxPeople.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 142);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(307, 25);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Số người tối đa";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtRoomTypeName
-            // 
-            this.txtRoomTypeName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRoomTypeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRoomTypeName.Enabled = false;
-            this.txtRoomTypeName.Location = new System.Drawing.Point(3, 34);
-            this.txtRoomTypeName.Name = "txtRoomTypeName";
-            this.txtRoomTypeName.Size = new System.Drawing.Size(307, 31);
-            this.txtRoomTypeName.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 72);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(307, 25);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Giá phòng";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPrice.Enabled = false;
-            this.txtPrice.Location = new System.Drawing.Point(3, 104);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(307, 31);
-            this.txtPrice.TabIndex = 1;
             // 
             // groupBox6
             // 
@@ -678,6 +579,108 @@
             this.cboRoomNumber.Size = new System.Drawing.Size(253, 33);
             this.cboRoomNumber.TabIndex = 0;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tableLayoutPanel3);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Green;
+            this.groupBox2.Location = new System.Drawing.Point(458, 53);
+            this.groupBox2.Name = "groupBox2";
+            this.tableLayoutPanel1.SetRowSpan(this.groupBox2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(319, 352);
+            this.groupBox2.TabIndex = 15;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Thông tin loại phòng";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtMaxPeople, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.txtRoomTypeName, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label6, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.txtPrice, 0, 3);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 27);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 7;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(313, 322);
+            this.tableLayoutPanel3.TabIndex = 4;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 2);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(307, 25);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Tên loại phòng";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtMaxPeople
+            // 
+            this.txtMaxPeople.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMaxPeople.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMaxPeople.Enabled = false;
+            this.txtMaxPeople.Location = new System.Drawing.Point(3, 174);
+            this.txtMaxPeople.Name = "txtMaxPeople";
+            this.txtMaxPeople.Size = new System.Drawing.Size(307, 31);
+            this.txtMaxPeople.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 142);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(307, 25);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Số người tối đa";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtRoomTypeName
+            // 
+            this.txtRoomTypeName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRoomTypeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRoomTypeName.Enabled = false;
+            this.txtRoomTypeName.Location = new System.Drawing.Point(3, 34);
+            this.txtRoomTypeName.Name = "txtRoomTypeName";
+            this.txtRoomTypeName.Size = new System.Drawing.Size(307, 31);
+            this.txtRoomTypeName.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 72);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(307, 25);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Giá phòng";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPrice.Enabled = false;
+            this.txtPrice.Location = new System.Drawing.Point(3, 104);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(307, 31);
+            this.txtPrice.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -923,75 +926,6 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(1302, 659);
             this.tableLayoutPanel9.TabIndex = 22;
             // 
-            // groupBox9
-            // 
-            this.tableLayoutPanel9.SetColumnSpan(this.groupBox9, 2);
-            this.groupBox9.Controls.Add(this.dataGridView4);
-            this.groupBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.ForeColor = System.Drawing.Color.Green;
-            this.groupBox9.Location = new System.Drawing.Point(3, 173);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(1296, 483);
-            this.groupBox9.TabIndex = 19;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Danh sách phiếu đặt phòng";
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column4,
-            this.Column8,
-            this.Column5,
-            this.Column6,
-            this.Column7});
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView4.Location = new System.Drawing.Point(3, 27);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView4.Size = new System.Drawing.Size(1290, 453);
-            this.dataGridView4.TabIndex = 0;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Mã phiếu đặt";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 146;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Số phòng";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 120;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Tên khách hàng";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 163;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Ngày lập";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 112;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Tên nhân viên";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 148;
-            // 
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.tableLayoutPanel10);
@@ -1050,6 +984,80 @@
             this.label18.Text = "CHI TIẾT ĐẶT PHÒNG";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // groupBox9
+            // 
+            this.tableLayoutPanel9.SetColumnSpan(this.groupBox9, 2);
+            this.groupBox9.Controls.Add(this.dgr_PhieuDatPhong);
+            this.groupBox9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.ForeColor = System.Drawing.Color.Green;
+            this.groupBox9.Location = new System.Drawing.Point(3, 173);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(1296, 483);
+            this.groupBox9.TabIndex = 19;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Danh sách phiếu đặt phòng";
+            // 
+            // dgr_PhieuDatPhong
+            // 
+            this.dgr_PhieuDatPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgr_PhieuDatPhong.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgr_PhieuDatPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgr_PhieuDatPhong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column4,
+            this.Column8,
+            this.Column5,
+            this.Column6,
+            this.Column7});
+            this.dgr_PhieuDatPhong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgr_PhieuDatPhong.Location = new System.Drawing.Point(3, 27);
+            this.dgr_PhieuDatPhong.Name = "dgr_PhieuDatPhong";
+            this.dgr_PhieuDatPhong.RowHeadersWidth = 51;
+            this.dgr_PhieuDatPhong.RowTemplate.Height = 24;
+            this.dgr_PhieuDatPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgr_PhieuDatPhong.Size = new System.Drawing.Size(1290, 453);
+            this.dgr_PhieuDatPhong.TabIndex = 0;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "MAPHIEUDATPHONG";
+            this.Column4.HeaderText = "Mã phiếu đặt";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 146;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "SOPHONG";
+            this.Column8.HeaderText = "Số phòng";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 120;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "TENKH";
+            this.Column5.HeaderText = "Tên khách hàng";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 163;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "NGAYLAP";
+            this.Column6.HeaderText = "Ngày lập";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 112;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "TENNV";
+            this.Column7.HeaderText = "Tên nhân viên";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 148;
+            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.tableLayoutPanel11);
@@ -1067,18 +1075,22 @@
             // 
             this.tableLayoutPanel11.ColumnCount = 3;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 360F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 220F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 404F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel11.Controls.Add(this.label19, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.button3, 1, 1);
-            this.tableLayoutPanel11.Controls.Add(this.textBox8, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.button3, 2, 1);
+            this.tableLayoutPanel11.Controls.Add(this.txt_SDT, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.txt_CCCD, 1, 1);
+            this.tableLayoutPanel11.Controls.Add(this.cb_cccd, 2, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 27);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 3;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel11.RowCount = 4;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel11.Size = new System.Drawing.Size(964, 84);
             this.tableLayoutPanel11.TabIndex = 4;
             // 
@@ -1086,11 +1098,11 @@
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(3, 2);
+            this.label19.Location = new System.Drawing.Point(3, 4);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(354, 25);
             this.label19.TabIndex = 3;
-            this.label19.Text = "Tên khách hàng";
+            this.label19.Text = "SĐT Khách hàng";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button3
@@ -1102,21 +1114,54 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(363, 33);
+            this.button3.Location = new System.Drawing.Point(767, 36);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(214, 34);
+            this.button3.Size = new System.Drawing.Size(194, 31);
             this.button3.TabIndex = 2;
             this.button3.Text = "Tìm kiếm";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox8
+            // txt_SDT
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(3, 34);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(354, 31);
-            this.textBox8.TabIndex = 1;
+            this.txt_SDT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_SDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_SDT.Location = new System.Drawing.Point(3, 36);
+            this.txt_SDT.Name = "txt_SDT";
+            this.txt_SDT.Size = new System.Drawing.Size(354, 31);
+            this.txt_SDT.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(363, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(398, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Mã định danh";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txt_CCCD
+            // 
+            this.txt_CCCD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_CCCD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_CCCD.Location = new System.Drawing.Point(363, 36);
+            this.txt_CCCD.Name = "txt_CCCD";
+            this.txt_CCCD.Size = new System.Drawing.Size(398, 31);
+            this.txt_CCCD.TabIndex = 5;
+            // 
+            // cb_cccd
+            // 
+            this.cb_cccd.AutoSize = true;
+            this.cb_cccd.Location = new System.Drawing.Point(767, 3);
+            this.cb_cccd.Name = "cb_cccd";
+            this.cb_cccd.Size = new System.Drawing.Size(144, 27);
+            this.cb_cccd.TabIndex = 6;
+            this.cb_cccd.Text = "Mã định danh";
+            this.cb_cccd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cb_cccd.UseVisualStyleBackColor = true;
+            this.cb_cccd.CheckedChanged += new System.EventHandler(this.cb_cccd_CheckedChanged);
             // 
             // contextMenuStrip1
             // 
@@ -1148,9 +1193,6 @@
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -1162,6 +1204,9 @@
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel8.ResumeLayout(false);
@@ -1172,10 +1217,10 @@
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgr_PhieuDatPhong)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel11.PerformLayout();
@@ -1226,19 +1271,14 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dgr_PhieuDatPhong;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt_SDT;
         private System.Windows.Forms.Button btnSearchCustomer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.ListView lsvRoomBooked;
         private System.Windows.Forms.ListView lsvRoomEmpty;
         private System.Windows.Forms.Label label7;
@@ -1262,5 +1302,13 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_CCCD;
+        private System.Windows.Forms.CheckBox cb_cccd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

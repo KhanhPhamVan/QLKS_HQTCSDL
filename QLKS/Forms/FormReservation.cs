@@ -184,10 +184,27 @@ namespace QLKS
             }
             return "Phòng trống";
         }
+
+        private List<int> GetSelectedMaPhong()
+        {
+            List<int> listMaPhong = new List<int>();
+            foreach (DataGridViewRow row in dgr_PhieuDatPhong.SelectedRows)
+            {
+                int maphong= Convert.ToInt32(row.Cells[0].Value.ToString());
+                if (!listMaPhong.Contains(maphong)) { 
+                    listMaPhong.Add(Convert.ToInt32(row.Cells[0].Value.ToString()));
+                }
+            }
+            return listMaPhong;
+        }
+
+
         private void button6_Click(object sender, EventArgs e)
         {
-            FormChangeRoom form = new FormChangeRoom();
-            form.ShowDialog();
+            List<int> MaPhongs = GetSelectedMaPhong();
+            int MaPhieuDatPhong = Convert.ToInt32(dgr_PhieuDatPhong.CurrentRow.Cells[0].Value.ToString());
+            FormChangeRoom formChangeRoom = new FormChangeRoom(MaPhongs);
+            formChangeRoom.ShowDialog();
         }
 
         private void FormReservation_Load(object sender, EventArgs e)

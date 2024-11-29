@@ -73,7 +73,24 @@ namespace QLKS.Forms
 
         private void button9_Click(object sender, EventArgs e)
         {
+            try
+            {
+                int MaPhieuDatPhong = (int)cbc_MaPhieuDatPhong.SelectedValue;
+                int MaPhongCu = (int)cbc_SoPhongCu.SelectedValue;
+                int MaPhongMoi = (int)dgr_PhongTrong.CurrentRow.Cells["MaPhong"].Value;
+                string NgayDoi = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss:fff");
+                string LyDo = txt_LyDo.Text;
 
+                object[] objects = { MaPhieuDatPhong, MaPhongCu, MaPhongMoi, NgayDoi, LyDo };
+                string sqls = $"EXEC SP_CAPNHAT_DOITRAPHONG  {MaPhieuDatPhong} , {MaPhongCu} , {MaPhongMoi} , '{NgayDoi}' , '{LyDo}' ";
+                db.ExecuteNonQuery(sqls);
+
+                MessageBox.Show("Đổi phòng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch(Exception error)
+            {
+                Console.WriteLine(error.Message);
+            }
         }
     }
 }

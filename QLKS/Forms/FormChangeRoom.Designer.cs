@@ -32,9 +32,10 @@
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.txt_SoPhongMoi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbc_MaPhieuDatPhong = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_LyDo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbc_SoPhongCu = new System.Windows.Forms.ComboBox();
@@ -48,7 +49,6 @@
             this.dgr_PhongTrong = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.txt_SoPhongMoi = new System.Windows.Forms.TextBox();
             this.MAPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -100,7 +100,7 @@
             this.tableLayoutPanel3.Controls.Add(this.txt_SoPhongMoi, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.cbc_MaPhieuDatPhong, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.textBox1, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.txt_LyDo, 2, 3);
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.label4, 2, 2);
             this.tableLayoutPanel3.Controls.Add(this.cbc_SoPhongCu, 2, 1);
@@ -117,6 +117,14 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(879, 178);
             this.tableLayoutPanel3.TabIndex = 9;
+            // 
+            // txt_SoPhongMoi
+            // 
+            this.txt_SoPhongMoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_SoPhongMoi.Location = new System.Drawing.Point(3, 103);
+            this.txt_SoPhongMoi.Name = "txt_SoPhongMoi";
+            this.txt_SoPhongMoi.Size = new System.Drawing.Size(234, 31);
+            this.txt_SoPhongMoi.TabIndex = 1;
             // 
             // label3
             // 
@@ -138,14 +146,14 @@
             this.cbc_MaPhieuDatPhong.Size = new System.Drawing.Size(234, 33);
             this.cbc_MaPhieuDatPhong.TabIndex = 6;
             // 
-            // textBox1
+            // txt_LyDo
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(253, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 31);
-            this.textBox1.TabIndex = 7;
+            this.txt_LyDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_LyDo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_LyDo.Location = new System.Drawing.Point(253, 104);
+            this.txt_LyDo.Name = "txt_LyDo";
+            this.txt_LyDo.Size = new System.Drawing.Size(234, 31);
+            this.txt_LyDo.TabIndex = 7;
             // 
             // label2
             // 
@@ -329,14 +337,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(885, 394);
             this.tableLayoutPanel2.TabIndex = 17;
             // 
-            // txt_SoPhongMoi
-            // 
-            this.txt_SoPhongMoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_SoPhongMoi.Location = new System.Drawing.Point(3, 103);
-            this.txt_SoPhongMoi.Name = "txt_SoPhongMoi";
-            this.txt_SoPhongMoi.Size = new System.Drawing.Size(234, 31);
-            this.txt_SoPhongMoi.TabIndex = 1;
-            // 
             // MAPHONG
             // 
             this.MAPHONG.DataPropertyName = "MAPHONG";
@@ -373,6 +373,7 @@
             // 
             // SOLUONGNGUOITOIDA
             // 
+            this.SOLUONGNGUOITOIDA.DataPropertyName = "SOLUONGNGUOITOIDA";
             this.SOLUONGNGUOITOIDA.HeaderText = "Số lượng người tối đa";
             this.SOLUONGNGUOITOIDA.MinimumWidth = 6;
             this.SOLUONGNGUOITOIDA.Name = "SOLUONGNGUOITOIDA";
@@ -409,7 +410,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_LyDo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dtpStart;
         private System.Windows.Forms.DateTimePicker dtpEnd;

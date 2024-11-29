@@ -121,7 +121,7 @@
   <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5gAAAOYBIly6UQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAVKSURBVFhHtZd9
+        5QAAAOUBj+WbPAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAVKSURBVFhHtZd9
         UFRVGMZv05STWdPXH00NjE7OZGZlTaMlpfVHGLt3l727XHZh+XDRISW3wcVvsTEoCQjM+JQQFU0TQiRN
         UBNzUjNFBZVx3bugpKI2iKAmyNI+nXv33nW/gB2W3pln7t5zzn2fH/ec+3IO5W8s+3UKvbR2RpJpa8TW
         +JSN+YyMK1PLuGqVnKtj5FwFuc8h1wSl0jpefGTkgpFbXomKP1AZbyrviZ6zB8bieTCuS0TypljMzUpF
@@ -150,7 +150,7 @@
   <data name="btn_Task6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5gAAAOYBIly6UQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALsSURBVFhH7Zbt
+        5QAAAOUBj+WbPAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALsSURBVFhH7Zbt
         S1NRHMd9478R1b8Q9GqbDxmCZFsUUVmzkYFSRsI2p77IdLkMk7QnTalcDzYxUUt8UUxFUF8srRQqnUUP
         y8wHok0nuu3b+Z3blrd7tW3aXu0HHzj3nN/5fr872727CfGKFxWAbYxSRn2MIK+tQfPtTts7ryv1Kjwq
         S0wgr8mWcS95U4CKb6lXECjIAYpt+JpdiwltNaA8/1+ZSqlh1jBTgDuOpNsYUTbGFPIkbx5gf9oX7FF8
@@ -332,7 +332,7 @@
   <data name="btn_CloseChildForm.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHDSURBVEhLzZZb
+        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHDSURBVEhLzZZb
         K0RRFIAnDzRFydu4TZgfQZTfQCkSjfIsCXmcn0LzoLzKLcWL34CSGHl2ickljG+tvbY5Z8yYM3UefPXl
         7LXXXvvMtmfvSfxFqVRK4zIe4A2+4Ade4R4uYbelR4dBfZhHKVaPd9zAlA1XaK/aYxg6pvERG+Uex6xG
         DotaMAhBWY4vDCJLMYcDmDQzOI+HGOQTd9xjxQQEplz8hzMctu6akDOKFzKggvIENOSf+aRhxzG2W3dd

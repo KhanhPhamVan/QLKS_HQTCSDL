@@ -47,13 +47,14 @@
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dgr_PhongTrong = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.MAPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENLOAIPHONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SOLUONGNGUOITOIDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.checkboxNgayTra = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -141,7 +142,7 @@
             // 
             this.cbc_MaPhieuDatPhong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbc_MaPhieuDatPhong.FormattingEnabled = true;
-            this.cbc_MaPhieuDatPhong.Location = new System.Drawing.Point(3, 33);
+            this.cbc_MaPhieuDatPhong.Location = new System.Drawing.Point(3, 38);
             this.cbc_MaPhieuDatPhong.Name = "cbc_MaPhieuDatPhong";
             this.cbc_MaPhieuDatPhong.Size = new System.Drawing.Size(234, 33);
             this.cbc_MaPhieuDatPhong.TabIndex = 6;
@@ -181,7 +182,7 @@
             // 
             this.cbc_SoPhongCu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbc_SoPhongCu.FormattingEnabled = true;
-            this.cbc_SoPhongCu.Location = new System.Drawing.Point(253, 33);
+            this.cbc_SoPhongCu.Location = new System.Drawing.Point(253, 38);
             this.cbc_SoPhongCu.Name = "cbc_SoPhongCu";
             this.cbc_SoPhongCu.Size = new System.Drawing.Size(234, 33);
             this.cbc_SoPhongCu.TabIndex = 6;
@@ -285,8 +286,8 @@
             this.dgr_PhongTrong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MAPHONG,
             this.SoPhong,
-            this.Column2,
-            this.Column3,
+            this.TENLOAIPHONG,
+            this.GIA,
             this.SOLUONGNGUOITOIDA});
             this.dgr_PhongTrong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgr_PhongTrong.Location = new System.Drawing.Point(3, 27);
@@ -296,6 +297,47 @@
             this.dgr_PhongTrong.Size = new System.Drawing.Size(873, 288);
             this.dgr_PhongTrong.TabIndex = 0;
             this.dgr_PhongTrong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgr_PhongTrong_CellClick);
+            // 
+            // MAPHONG
+            // 
+            this.MAPHONG.DataPropertyName = "MAPHONG";
+            this.MAPHONG.Frozen = true;
+            this.MAPHONG.HeaderText = "MAPHONG";
+            this.MAPHONG.MinimumWidth = 6;
+            this.MAPHONG.Name = "MAPHONG";
+            this.MAPHONG.ReadOnly = true;
+            this.MAPHONG.Visible = false;
+            // 
+            // SoPhong
+            // 
+            this.SoPhong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.SoPhong.DataPropertyName = "SoPhong";
+            this.SoPhong.Frozen = true;
+            this.SoPhong.HeaderText = "Số phòng";
+            this.SoPhong.MinimumWidth = 6;
+            this.SoPhong.Name = "SoPhong";
+            this.SoPhong.Width = 205;
+            // 
+            // TENLOAIPHONG
+            // 
+            this.TENLOAIPHONG.DataPropertyName = "TENLOAIPHONG";
+            this.TENLOAIPHONG.HeaderText = "Tên loại phòng";
+            this.TENLOAIPHONG.MinimumWidth = 6;
+            this.TENLOAIPHONG.Name = "TENLOAIPHONG";
+            // 
+            // GIA
+            // 
+            this.GIA.DataPropertyName = "GIA";
+            this.GIA.HeaderText = "Giá phòng";
+            this.GIA.MinimumWidth = 6;
+            this.GIA.Name = "GIA";
+            // 
+            // SOLUONGNGUOITOIDA
+            // 
+            this.SOLUONGNGUOITOIDA.DataPropertyName = "SOLUONGNGUOITOIDA";
+            this.SOLUONGNGUOITOIDA.HeaderText = "Số lượng người tối đa";
+            this.SOLUONGNGUOITOIDA.MinimumWidth = 6;
+            this.SOLUONGNGUOITOIDA.Name = "SOLUONGNGUOITOIDA";
             // 
             // tableLayoutPanel1
             // 
@@ -327,6 +369,7 @@
             this.tableLayoutPanel2.Controls.Add(this.dtpEnd, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.dtpStart, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label17, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.checkboxNgayTra, 3, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 267);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -337,46 +380,17 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(885, 394);
             this.tableLayoutPanel2.TabIndex = 17;
             // 
-            // MAPHONG
+            // checkboxNgayTra
             // 
-            this.MAPHONG.DataPropertyName = "MAPHONG";
-            this.MAPHONG.Frozen = true;
-            this.MAPHONG.HeaderText = "MAPHONG";
-            this.MAPHONG.MinimumWidth = 6;
-            this.MAPHONG.Name = "MAPHONG";
-            this.MAPHONG.ReadOnly = true;
-            this.MAPHONG.Visible = false;
-            // 
-            // SoPhong
-            // 
-            this.SoPhong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.SoPhong.DataPropertyName = "SoPhong";
-            this.SoPhong.Frozen = true;
-            this.SoPhong.HeaderText = "Số phòng";
-            this.SoPhong.MinimumWidth = 6;
-            this.SoPhong.Name = "SoPhong";
-            this.SoPhong.Width = 205;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "TENLOAIPHONG";
-            this.Column2.HeaderText = "Tên loại phòng";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "GIA";
-            this.Column3.HeaderText = "Giá phòng";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // SOLUONGNGUOITOIDA
-            // 
-            this.SOLUONGNGUOITOIDA.DataPropertyName = "SOLUONGNGUOITOIDA";
-            this.SOLUONGNGUOITOIDA.HeaderText = "Số lượng người tối đa";
-            this.SOLUONGNGUOITOIDA.MinimumWidth = 6;
-            this.SOLUONGNGUOITOIDA.Name = "SOLUONGNGUOITOIDA";
+            this.checkboxNgayTra.AutoSize = true;
+            this.checkboxNgayTra.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkboxNgayTra.ForeColor = System.Drawing.Color.Green;
+            this.checkboxNgayTra.Location = new System.Drawing.Point(493, 33);
+            this.checkboxNgayTra.Name = "checkboxNgayTra";
+            this.checkboxNgayTra.Size = new System.Drawing.Size(243, 27);
+            this.checkboxNgayTra.TabIndex = 29;
+            this.checkboxNgayTra.Text = "Thay đổi ngày trả dự kiến?";
+            this.checkboxNgayTra.UseVisualStyleBackColor = true;
             // 
             // FormChangeRoom
             // 
@@ -425,8 +439,9 @@
         private System.Windows.Forms.TextBox txt_SoPhongMoi;
         private System.Windows.Forms.DataGridViewTextBoxColumn MAPHONG;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoPhong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENLOAIPHONG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GIA;
         private System.Windows.Forms.DataGridViewTextBoxColumn SOLUONGNGUOITOIDA;
+        private System.Windows.Forms.CheckBox checkboxNgayTra;
     }
 }

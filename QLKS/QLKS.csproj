@@ -149,7 +149,6 @@
     <Compile Include="ViewModels\AccountViewModel.cs" />
     <Compile Include="ViewModels\BookingRoomViewModel.cs" />
     <Compile Include="ViewModels\LoadingListRoom.cs" />
-    <Compile Include="ViewModels\ReservationRoomTicket.cs" />
     <Compile Include="ViewModels\ReservationRoomStatus.cs" />
     <Compile Include="ViewModels\RoomViewModel.cs" />
     <EmbeddedResource Include="Forms\FormAccount.resx">

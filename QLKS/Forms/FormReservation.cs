@@ -203,7 +203,9 @@ namespace QLKS
         {
             List<int> MaPhongs = GetSelectedMaPhong();
             int MaPhieuDatPhong = Convert.ToInt32(dgr_PhieuDatPhong.CurrentRow.Cells[0].Value.ToString());
-            FormChangeRoom formChangeRoom = new FormChangeRoom(MaPhongs);
+            int MaNV = Convert.ToInt32(dgr_PhieuDatPhong.CurrentRow.Cells["MaNV"].Value.ToString());
+            int MaKH = Convert.ToInt32(dgr_PhieuDatPhong.CurrentRow.Cells["MaKH"].Value.ToString());
+            FormChangeRoom formChangeRoom = new FormChangeRoom(MaPhongs, MaNV, MaKH);
             formChangeRoom.ShowDialog();
         }
 

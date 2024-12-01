@@ -99,6 +99,8 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MAKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.label19 = new System.Windows.Forms.Label();
@@ -1008,7 +1010,9 @@
             this.Column8,
             this.Column5,
             this.Column6,
-            this.Column7});
+            this.Column7,
+            this.MANV,
+            this.MAKH});
             this.dgr_PhieuDatPhong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgr_PhieuDatPhong.Location = new System.Drawing.Point(3, 27);
             this.dgr_PhieuDatPhong.Name = "dgr_PhieuDatPhong";
@@ -1057,6 +1061,26 @@
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
             this.Column7.Width = 148;
+            // 
+            // MANV
+            // 
+            this.MANV.DataPropertyName = "MANV";
+            this.MANV.HeaderText = "MANV";
+            this.MANV.MinimumWidth = 6;
+            this.MANV.Name = "MANV";
+            this.MANV.ReadOnly = true;
+            this.MANV.Visible = false;
+            this.MANV.Width = 93;
+            // 
+            // MAKH
+            // 
+            this.MAKH.DataPropertyName = "MAKH";
+            this.MAKH.HeaderText = "MAKH";
+            this.MAKH.MinimumWidth = 6;
+            this.MAKH.Name = "MAKH";
+            this.MAKH.ReadOnly = true;
+            this.MAKH.Visible = false;
+            this.MAKH.Width = 92;
             // 
             // groupBox10
             // 
@@ -1156,7 +1180,7 @@
             this.cb_cccd.AutoSize = true;
             this.cb_cccd.Location = new System.Drawing.Point(767, 3);
             this.cb_cccd.Name = "cb_cccd";
-            this.cb_cccd.Size = new System.Drawing.Size(144, 27);
+            this.cb_cccd.Size = new System.Drawing.Size(141, 27);
             this.cb_cccd.TabIndex = 6;
             this.cb_cccd.Text = "Mã định danh";
             this.cb_cccd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1310,5 +1334,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MANV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MAKH;
     }
 }
